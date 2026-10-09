@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eksplore Marketplace</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="explore">
+  <header class="site-header">
+    <a class="logo" href="index.html"><img src="assets/logo/logo_final.svg.svg" alt="Eksplore Sumba Timur"></a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a class="active" href="explore.html">Eksplore</a>
+      <a class="nav-disabled" aria-disabled="true">Trip Planner</a>
+      <a href="#footer">About</a>
+      <a href="#footer">Contact</a>
+    </nav>
+    <div class="header-icons"><button type="button" data-favorite>♡</button><button type="button" data-open-cart>♧</button></div>
+  </header>
+
+  <main class="container marketplace">
+    <section class="market-intro">
+      <h1>Explore Marketplace</h1>
+      <p>Temukan destinasi indah, paket wisata, transportasi, guide lokal, penginapan, kuliner khas, dan produk lokal autentik di Sumba Timur.</p>
+      <div class="market-tools">
+        <label class="search-box market-search"><span class="search-icon"></span><input id="marketSearch" placeholder="Cari destinasi, paket wisata, transparansi, guide, penginapan..."></label>
+        <button class="tool-button" id="smartFilter"><i class="ui-icon sliders"></i>Filter Cerdas</button>
+        <select id="sortSelect"><option value="popular">Urutkan : Terpopuler</option><option value="low">Harga Termurah</option><option value="high">Harga Tertinggi</option></select>
+        <button class="view-button active">▦</button><button class="view-button">☷</button>
+      </div>
+      <div class="tabs" id="categoryTabs"></div>
+    </section>
+
+    <section class="market-layout">
+      <aside class="filter-panel">
+        <h2>Filter Cerdas</h2>
+        <h3>Kategori</h3>
+        <label><input type="checkbox" checked>Semua</label>
+        <label><input type="checkbox">Destinasi</label>
+        <label><input type="checkbox">Paket wisata</label>
+        <label><input type="checkbox">Penginapan</label>
+        <label><input type="checkbox">Transportasi</label>
+        <label><input type="checkbox">Guide Lokal</label>
+        <label><input type="checkbox">Kuliner</label>
+        <label><input type="checkbox">Produk Lokal</label>
+        <hr>
+        <h3>Budget <span>(per orang)</span></h3>
+        <label><input type="radio" name="budget" checked>Rp0 - Rp250.000</label>
+        <label><input type="radio" name="budget">Rp250.000 - Rp750.000</label>
+        <label><input type="radio" name="budget">Rp750.000 - Rp1.500.000</label>
+        <label><input type="radio" name="budget">Rp1.500.000+</label>
+        <button class="reset-button" id="resetFilter">Reset Filter</button>
+      </aside>
+      <section>
+        <div class="result-row"><b id="resultCount">Menampilkan 1-12 dari 48 pengalaman</b><span>Tampilkan: <button>12 per halaman⌄</button></span></div>
+        <div class="card-grid three" data-render="market"></div>
+      </section>
+    </section>
+  </main>
+
+  <aside class="cart-drawer" id="cartDrawer"></aside>
+  <footer class="site-footer" id="footer"></footer>
+  <div class="toast" id="toast"></div>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

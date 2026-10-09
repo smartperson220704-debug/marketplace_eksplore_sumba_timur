@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kampung Raja Prailiu - Detail</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="detail">
+  <header class="site-header">
+    <a class="logo" href="index.html"><img src="assets/logo/logo_final.svg.svg" alt="Eksplore Sumba Timur"></a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="explore.html">Eksplore</a>
+      <a class="nav-disabled active" aria-disabled="true">Trip Planner</a>
+      <a href="#footer">About</a>
+      <a href="#footer">Contact</a>
+    </nav>
+    <div class="header-icons"><button type="button" data-favorite>♡</button><button type="button" data-open-cart>♧</button></div>
+  </header>
+
+  <main class="container detail-page">
+    <section class="detail-top">
+      <div class="detail-gallery">
+        <img class="detail-main-img" src="assets/detail/detail-main.jpg.jpg" alt="Kampung Raja Prailiu">
+        <div><img src="assets/detail/detail-thumb-1.jpg.jpg" alt="Tenun"><img src="assets/detail/detail-thumb-2.jpg.jpg" alt="Area kampung"><img src="assets/detail/detail-thumb-3.jpg.jpg" alt="Rumah adat"></div>
+      </div>
+      <article class="detail-panel">
+        <span class="outline-badge">Destinasi Budaya</span>
+        <h1>Kampung Raja Prailiu</h1>
+        <h3><i class="ui-icon pin active"></i>Waingapu, Sumba Timur</h3>
+        <p class="rating"><b>★</b> <strong>4.8</strong> (256 ulasan)</p>
+        <h2>Rp120.000 <small>/ orang</small></h2>
+        <p>Rasakan kekayaan budaya Sumba di Kampung Raja Prailiu. Saksikan rumah adat megah, tenun ikat tradisional, ritual adat dan kehidupan masyarakat yang masih lestari.</p>
+        <div class="chips"><span>Budaya</span><span>Rumah Adat</span><span>Tenun Ikat</span><span>Family Friendly</span></div>
+        <div class="detail-actions"><button class="btn primary" data-add-cart="waingapu">Tambah Ke Rencana</button><button class="btn secondary" data-add-cart="waingapu">Tambah Ke Rencana</button></div>
+      </article>
+    </section>
+
+    <section class="detail-info-grid">
+      <article><h2><i class="small-dot orange"></i>Tentang Destinasi</h2><p>Kampung Raja Prailiu adalah desa adat yang menjadi pusat budaya dan sejarah di Sumba Timur. Desa ini terkenal dengan rumah adat tinggi bertiang dengan atap ijuk berbentuk Marapu, batu berat di halaman, serta sistem kekerabatan yang masih dijaga oleh masyarakat setempat.</p></article>
+      <article><h2><i class="small-dot green"></i>Highlight Pengalaman</h2><div class="highlight-list"><span>Rumah adat ikonik</span><span>Ritual & Upacara</span><span>Tenun Ikat Lokal</span><span>Interaksi Budaya</span></div></article>
+      <article><h2>Informasi Penting</h2><div class="facts"><span>Jam Terbaik<br><b>08.00 - 16.30 WITA</b></span><span>Durasi kunjungan<br><b>1,5 - 2 jam</b></span><span>Akses Jalan<br><b>Jalan beraspal</b></span><span>Fasilitas<br><b>Parkir, toilet gazebo</b></span><span>Guide Tersedia<br><b>Tersedia guide lokal</b></span><span>Estimasi cuaca<br><b>cerah berawan</b></span></div></article>
+      <article><h2>Lokasi & Akses</h2><div class="map-card"><p>Kampung Raja Prailiu berada di desa Matawai La Pawu, Kecamatan Kambera, Sumba Timur.</p><button class="btn secondary">Dari Waingapu</button></div></article>
+    </section>
+
+    <section class="white-section">
+      <div class="section-head"><h2>Produk UMKM & Aksesoris Lokal</h2><a href="explore.html">Lihat Semua Produk ›</a></div>
+      <div class="card-grid four" data-render="umkm"></div>
+    </section>
+
+    <section class="white-section split-review">
+      <article><h2>Apa yang termasuk</h2><p>✓ Tiket masuk destinasi</p><p>✓ Guide lokal (Jika tersedia)</p><p>✓ Parkir Kendaraan</p></article>
+      <article><h2>Tidak termasuk</h2><p>⊗ Transportasi menuju lokasi</p><p>⊗ Makan dan minuman</p><p>⊗ Tip & Pengeluaran pribadi</p></article>
+      <article class="wide"><div class="section-head"><h2>Ulasan Pengunjung</h2><a>Lihat Semua Ulasan ›</a></div><div class="review-row"><span>Sari R ★★★★★</span><span>Andi W ★★★★★</span><span>Dewi L ★★★★★</span></div></article>
+    </section>
+
+    <section class="white-section">
+      <div class="section-head"><h2>Destinasi Serupa</h2><a href="explore.html">Lihat Semua Destinasi ›</a></div>
+      <div class="card-grid four" data-render="similar"></div>
+    </section>
+  </main>
+  <aside class="cart-drawer" id="cartDrawer"></aside>
+  <footer class="site-footer" id="footer"></footer>
+  <div class="toast" id="toast"></div>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
